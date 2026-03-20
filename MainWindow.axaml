@@ -1,0 +1,52 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Crypto.MainWindow"
+        Title="Crypto">
+        <StackPanel Margin="20" Spacing="10">
+
+                <TextBlock Text="Text"/>
+
+                <TextBox Name="InputText"
+                         Height="80"
+                         AcceptsReturn="True"/>
+
+                <TextBlock Text="Key"/>
+
+                <TextBox Name="KeyText"/>
+
+                <ComboBox Name="AlgorithmBox" SelectedIndex="0">
+                        <ComboBoxItem Content="Vigenere (Russian)"/>
+                        <ComboBoxItem Content="Columnar Progressive (English)"/>
+                </ComboBox>
+
+                <StackPanel Orientation="Horizontal" Spacing="10">
+
+                        <Button Content="Encrypt"
+                                Click="EncryptClick"/>
+
+                        <Button Content="Decrypt"
+                                Click="DecryptClick"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" Spacing="10">
+
+                        <Button Content="Open File"
+                                Click="OpenFileClick"/>
+
+                        <Button Content="Save Result"
+                                Click="SaveFileClick"/>
+
+                </StackPanel>
+
+                <TextBlock Text="Result"/>
+
+                <TextBox Name="ResultText"
+                         Height="120"
+                         AcceptsReturn="True"/>
+
+        </StackPanel>
+</Window>
