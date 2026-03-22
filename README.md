@@ -14,7 +14,7 @@
 
 ### Ссылка на папку с кодом: https://github.com/Negtab/Column-Vigenere-Cipher/tree/master/Algorithms
 
-### Ссылув на отчет: https://github.com/Negtab/Column-Vigenere-Cipher/blob/master/УО.docx
+### Ссылка на отчет: https://github.com/Negtab/Column-Vigenere-Cipher/blob/master/УО.docx
 
 # 📘 Инструкция по использованию программы
 ## Шаг 1. Выберите алгоритм шифрования
