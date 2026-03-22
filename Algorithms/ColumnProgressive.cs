@@ -29,28 +29,20 @@ public static class ColumnarProgressive
         int index = 0;
 
         for (int r = 0; r < rows; r++)
-        {
             for (int c = 0; c < cols; c++)
-            {
                 if (index < text.Length)
                     table[r, c] = text[index++];
                 else
                     table[r, c] = '\0'; // пустая ячейка
-            }
-        }
 
         int[] order = GetColumnOrder(key);
 
         StringBuilder result = new StringBuilder();
 
         foreach (var col in order)
-        {
             for (int r = 0; r < rows; r++)
-            {
                 if (table[r, col] != '\0')
                     result.Append(table[r, col]);
-            }
-        }
 
         return result.ToString();
     }
@@ -85,21 +77,15 @@ public static class ColumnarProgressive
             int len = colLengths[col];
 
             for (int r = 0; r < len; r++)
-            {
                 table[r, col] = text[index++];
-            }
         }
 
         StringBuilder result = new StringBuilder();
 
         for (int r = 0; r < rows; r++)
-        {
             for (int c = 0; c < cols; c++)
-            {
                 if (table[r, c] != '\0')
                     result.Append(table[r, c]);
-            }
-        }
 
         return result.ToString();
     }

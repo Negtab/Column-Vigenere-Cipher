@@ -71,3 +71,4 @@
 /Users/artemmihlin/Documents/Rider/Crypto/obj/Debug/net10.0/Crypto.pdb
 /Users/artemmihlin/Documents/Rider/Crypto/obj/Debug/net10.0/Crypto.genruntimeconfig.cache
 /Users/artemmihlin/Documents/Rider/Crypto/obj/Debug/net10.0/ref/Crypto.dll
+/Users/artemmihlin/Documents/Rider/Crypto/obj/Debug/net10.0/Crypto.sourcelink.json

@@ -24,16 +24,22 @@ public partial class MainWindow : Window
         if (AlgorithmBox.SelectedIndex == 0)
         {
             text = TextFilter.FilterRussian(text);
-            key = TextFilter.FilterRussianKey(key);
+            key = TextFilter.FilterRussian(key);
 
-            ResultText.Text = VigenereRussian.Encrypt(text, key);
+            if (text != "" && key != "")
+                ResultText.Text = VigenereRussian.Encrypt(text, key);
+            else
+                ResultText.Text = "";
         }
         else
         {
             text = TextFilter.FilterEnglish(text);
-            key = TextFilter.FilterEnglishKey(key);
+            key = TextFilter.FilterEnglish(key);
 
-            ResultText.Text = ColumnarProgressive.Encrypt(text, key);
+            if (text != "" && key != "")
+                ResultText.Text = ColumnarProgressive.Encrypt(text, key);
+            else
+                ResultText.Text = "";
         }
     }
 
@@ -48,16 +54,22 @@ public partial class MainWindow : Window
         if (AlgorithmBox.SelectedIndex == 0)
         {
             text = TextFilter.FilterRussian(text);
-            key = TextFilter.FilterRussianKey(key);
+            key = TextFilter.FilterRussian(key);
 
-            ResultText.Text = VigenereRussian.Decrypt(text, key);
+            if (text != "" && key != "")
+                ResultText.Text = VigenereRussian.Decrypt(text, key);
+            else
+                ResultText.Text = "";
         }
         else
         {
             text = TextFilter.FilterEnglish(text);
-            key = TextFilter.FilterEnglishKey(key);
+            key = TextFilter.FilterEnglish(key);
 
-            ResultText.Text = ColumnarProgressive.Decrypt(text, key);
+            if (text != "" && key != "")
+                ResultText.Text = ColumnarProgressive.Decrypt(text, key);
+            else
+                ResultText.Text = "";
         }
     }
     
