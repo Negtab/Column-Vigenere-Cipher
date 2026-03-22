@@ -12,6 +12,8 @@
 - Загрузка и сохранение .txt файлов
 ### Ссылка на программу: [https://github.com/Negtab/Column-Vigenere-Cipher/bin/Release/net10.0/win-x64/publish/Crypto.exe](https://github.com/Negtab/Column-Vigenere-Cipher/blob/master/bin/Release/net10.0/win-x64/publish/Crypto.exe)
 
+### Ссылка на папку с кодом: [https://github.com/Negtab/Column-Vigenere-Cipher/Algorithms](https://github.com/Negtab/Column-Vigenere-Cipher/Algorithms)
+
 # 📘 Инструкция по использованию программы
 ## Шаг 1. Выберите алгоритм шифрования
 Программа поддерживает два метода. Выберите нужный, заполнив соответствующие поля:
